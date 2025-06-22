@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{236F143A-AB4B-49BF-9BF7-E5E613093247}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4E472FFA-B246-4B7F-A2C5-8F848EE5FBC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VendingMachineApp", "VendingMachineApp", "{FAE79F7F-8D0A-435C-87A9-DB7768F3F482}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optum.VendingMachineApp", "src\VendingMachineApp\Optum.VendingMachineApp.csproj", "{AD879DAB-8837-4D08-9F58-BEBC545B2D51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VendingMachineAppTest", "VendingMachineAppTest", "{CE2C81B7-97B0-4D72-87A3-88F54FD2618A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Optum.VendingMachineApp.UnitTest", "test\Optum.VendingMachineAppTests\Optum.VendingMachineApp.UnitTest.csproj", "{35799B37-06E8-43AD-ADFD-ADF85635F943}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD879DAB-8837-4D08-9F58-BEBC545B2D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD879DAB-8837-4D08-9F58-BEBC545B2D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD879DAB-8837-4D08-9F58-BEBC545B2D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD879DAB-8837-4D08-9F58-BEBC545B2D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35799B37-06E8-43AD-ADFD-ADF85635F943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35799B37-06E8-43AD-ADFD-ADF85635F943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35799B37-06E8-43AD-ADFD-ADF85635F943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35799B37-06E8-43AD-ADFD-ADF85635F943}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAE79F7F-8D0A-435C-87A9-DB7768F3F482} = {236F143A-AB4B-49BF-9BF7-E5E613093247}
+		{AD879DAB-8837-4D08-9F58-BEBC545B2D51} = {FAE79F7F-8D0A-435C-87A9-DB7768F3F482}
+		{CE2C81B7-97B0-4D72-87A3-88F54FD2618A} = {4E472FFA-B246-4B7F-A2C5-8F848EE5FBC3}
+		{35799B37-06E8-43AD-ADFD-ADF85635F943} = {CE2C81B7-97B0-4D72-87A3-88F54FD2618A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07CD39F2-9A74-4C67-8A2C-2CE43485C8F3}
+	EndGlobalSection
+EndGlobal
