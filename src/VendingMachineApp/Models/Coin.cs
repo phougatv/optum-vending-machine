@@ -2,16 +2,16 @@
 
 public readonly struct Coin
 {
-    public Double WeightInGrams { get; }
-    public Double DiameterInMillimeters { get; }
+	public Double WeightInGrams { get; }
+	public Double DiameterInMillimeters { get; }
 
-    private Coin(Double weight, Double diameter)
-    {
-        WeightInGrams = weight;
-        DiameterInMillimeters = diameter;
-    }
+	private Coin(Double weight, Double diameter)
+	{
+		WeightInGrams = weight;
+		DiameterInMillimeters = diameter;
+	}
 
-    public static Coin Create(Double weight, Double diameter)
+	public static Coin Create(Double weight, Double diameter)
 	{
 		if (weight <= 0)
 		{

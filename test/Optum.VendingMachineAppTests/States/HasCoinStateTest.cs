@@ -28,7 +28,7 @@ public class HasCoinStateTest
 		//Arrange
 		var hasCoinState = new HasCoinState(_machine, _coinValidator, _inventoryService);
 		_stateFactory.CreateHasCoinState(_machine).Returns(hasCoinState);
-		_machine.InsertCoin(_initialCoin);	//this simulates the transition from NoCoinState to HasCoinState
+		_machine.InsertCoin(_initialCoin);  //this simulates the transition from NoCoinState to HasCoinState
 
 		//Act & Assert
 		_stateFactory.Received(1).CreateNoCoinState(_machine);

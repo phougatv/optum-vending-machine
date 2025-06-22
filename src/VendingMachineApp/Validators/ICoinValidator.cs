@@ -2,5 +2,5 @@
 
 public interface ICoinValidator
 {
-    CoinValidationResult Validate(Coin coin);
+	CoinValidationResult Validate(Coin coin);
 }
