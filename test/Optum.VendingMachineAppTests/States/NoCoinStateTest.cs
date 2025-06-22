@@ -79,7 +79,7 @@ public class NoCoinStateTest
     public void InsertCoin_ShouldIndicate_WhenInvalidCoinIsInserted()
     {
         //Arrange
-        var invalidCoin = new Coin(25, 25);
+        var invalidCoin = Coin.Create(25, 25);
         var validationResult = CoinValidationResult.CreateInvalidResult();
         var noCoinState = new NoCoinState(_machine, _coinValidator);
         _stateFactory.CreateNoCoinState(_machine).Returns(noCoinState);
@@ -105,7 +105,7 @@ public class NoCoinStateTest
     public void InsertCoin_ShouldIndicate_WhenValidCoinIsInserted()
     {
         //Arrange
-        var validCoin = new Coin(25, 25);
+        var validCoin = Coin.Create(25, 25);
         var validationResult = CoinValidationResult.CreateValidResult("Quarter", 0.25m);
         var noCoinState = new NoCoinState(_machine, _coinValidator);
         _stateFactory.CreateNoCoinState(_machine).Returns(noCoinState);

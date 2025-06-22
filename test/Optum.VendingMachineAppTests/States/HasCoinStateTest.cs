@@ -12,7 +12,7 @@ public class HasCoinStateTest
 	public HasCoinStateTest()
 	{
 		_coinValidator = Substitute.For<ICoinValidator>();
-		_initialCoin = new Coin(10, 10); // this coin will be inserted during the NoCoinState
+		_initialCoin = Coin.Create(10, 10); // this coin will be inserted during the NoCoinState
 		_initialCoinValidationResult = CoinValidationResult.CreateValidResult("Quarter", 0.25m);
 		_coinValidator.Validate(_initialCoin).Returns(_initialCoinValidationResult);
 
@@ -72,7 +72,7 @@ public class HasCoinStateTest
 	public void InsertCoin_ShouldIndicate_WhenInvalidCoinIsInserted()
 	{
 		//Arrange
-		var invalidCoin = new Coin(100, 100);
+		var invalidCoin = Coin.Create(100, 100);
 		var invalidResult = CoinValidationResult.CreateInvalidResult();
 		var hasCoinState = new HasCoinState(_machine, _coinValidator, _inventoryService);
 		_stateFactory.CreateHasCoinState(_machine).Returns(hasCoinState);
@@ -104,7 +104,7 @@ public class HasCoinStateTest
 	public void InsertCoin_ShouldIndicate_WhenValidCoinIsInserted()
 	{
 		//Arrange
-		var validCoin = new Coin(25, 25);
+		var validCoin = Coin.Create(25, 25);
 		var validationResult = CoinValidationResult.CreateValidResult("Quarter", 0.25m);
 		var hasCoinState = new HasCoinState(_machine, _coinValidator, _inventoryService);
 		_stateFactory.CreateHasCoinState(_machine).Returns(hasCoinState);

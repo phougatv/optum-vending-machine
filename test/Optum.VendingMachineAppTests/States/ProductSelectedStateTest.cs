@@ -13,8 +13,8 @@ public class ProductSelectedStateTest
 
 	public ProductSelectedStateTest()
 	{
-		_dime = new Coin(10, 10);
-		_quarter = new Coin(25, 25); // this coin will be inserted during the NoCoinState
+		_dime = Coin.Create(10, 10);
+		_quarter = Coin.Create(25, 25); // this coin will be inserted during the NoCoinState
 		_coinValidator = Substitute.For<ICoinValidator>();
 		_validResultForQuarter = CoinValidationResult.CreateValidResult("Quarter", 0.25m);
 		_validResultForDime = CoinValidationResult.CreateValidResult("Dime", 0.10m);
