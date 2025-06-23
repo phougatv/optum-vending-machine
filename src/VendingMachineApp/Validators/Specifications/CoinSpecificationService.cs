@@ -4,9 +4,9 @@ public sealed class CoinSpecificationService
 {
 	private readonly List<CoinSpecificationOptions> _coinOptions;
 
-	public CoinSpecificationService(IOptions<List<CoinSpecificationOptions>> coinOptions)
+	public CoinSpecificationService(List<CoinSpecificationOptions> coinOptions)
 	{
-		_coinOptions = coinOptions.Value;
+		_coinOptions = coinOptions;
 	}
 
 	public IEnumerable<ICoinSpecification> GetSpecifications()

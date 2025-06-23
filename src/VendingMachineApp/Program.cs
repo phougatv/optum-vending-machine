@@ -25,7 +25,7 @@ internal class Program
 		}
 
 		//initialize coin specification service with options and coin validator with coin specifications
-		var coinSpecificationService = new CoinSpecificationInitializationService(coinSpecificationOptions);
+		var coinSpecificationService = new CoinSpecificationService(coinSpecificationOptions);
 		var coinSpecifications = coinSpecificationService.GetSpecifications().ToList();
 		var coinValidator = (ICoinValidator)new CoinValidator(coinSpecifications);
 

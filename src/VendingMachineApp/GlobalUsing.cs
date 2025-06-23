@@ -1,10 +1,8 @@
 ﻿global using Microsoft.Extensions.Configuration;
-global using Microsoft.Extensions.Options;
 global using Optum.VendingMachineApp.Configurations;
 global using Optum.VendingMachineApp.Factories;
 global using Optum.VendingMachineApp.Models;
 global using Optum.VendingMachineApp.Services;
-global using Optum.VendingMachineApp.Services.Initialization;
 global using Optum.VendingMachineApp.Shared;
 global using Optum.VendingMachineApp.States;
 global using Optum.VendingMachineApp.Validators;
